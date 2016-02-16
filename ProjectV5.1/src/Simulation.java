@@ -29,7 +29,7 @@ public class Simulation implements Runnable {
 				System.out.println("ERROR NO RULE NAME");
 			}
 			Box t = new Box(LARGEUR*HAUTEUR, this.f, nomRegle);
-			Fenetre.ouvrir("S.Mohamed & K.Nelly " + nomRegle, LARGEUR, HAUTEUR,
+			Fenetre.ouvrir("S.Mohamed & C.Hussam " + nomRegle, LARGEUR, HAUTEUR,
 					TAILLE_CELLULE,f.getRegle(nomRegle).getDureeVie());
 			while (Fenetre.lireCaractereNonBloquant() == Fenetre.RIEN) {
 				for (int i = 0; i < Math.sqrt(t.searchNbMax()); ++i) {
